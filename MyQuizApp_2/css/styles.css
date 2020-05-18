@@ -1,0 +1,131 @@
+body {
+  background: #d0e1e2;
+  font-size: 14px;
+  font-family: Verdana, sans-serif;
+}
+
+h1 {
+  color: #FF7C00;
+  background: -webkit-linear-gradient(top, #FFB76B 0%, #FFA73D 50%, #FF7C00 51%, #FF7F04 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5em;
+  padding-right: 30px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/* 背景の横位置をズラす */
+
+@keyframes example {
+  to {
+    background-position-x: 200%;
+  }
+}
+
+.container {
+  width: 400px;
+  margin: 8px auto;
+  background: #fff;
+  border-radius: 4px;
+  padding: 16px;
+  position: relative;
+}
+
+#question {
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+#choices {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+#choices>li {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#choices>li:hover {
+  background: #f8f8f8;
+}
+
+/* 正誤判定ここから */
+
+#choices>li.correct {
+  background: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+  font-weight: bold;
+}
+
+#choices>li.correct::after {
+  content: '...正解!';
+}
+
+#choices>li.wrong {
+  background: #f8d8da;
+  border-color: #f5c6cb;
+  color: #721c24;
+  font-weight: bold;
+}
+
+#choices>li.wrong::after {
+  content: '...不正解!';
+}
+
+/* 正誤判定ここまで */
+
+#btn, #result>a {
+  background: #3498db;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 0 #2880b9;
+}
+
+#btn.disabled {
+  background: #ccc;
+  box-shadow: 0 4px 0 #bbb;
+  opacity: 0.7;
+}
+
+/* スコア表示 */
+
+#result {
+  position: absolute;
+  width: 300px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+#result.hidden {
+  transform: translateY(-500px);
+}
+
+#result>p {
+  font-size: 24px;
+}
+
+#result>a {
+  display: block;
+  text-decoration: none;
+}

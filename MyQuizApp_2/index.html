@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1><i class="fas fa-question-circle"></i> 4択クイズ</h1>
+      <p>色んなジャンルに関するクイズです。（全10問）</p>
+    </div>
+    <section class="container">
+
+      <p id="question"></p>
+      <ul id="choices"></ul>
+      <div id="btn" class="disabled">次の問題へ</div>
+
+      <!-- スコア表示 -->
+      <section id="result" class="hidden">
+        <p></p>
+        <a href="">もう一度</a>
+      </section>
+    </section><!-- /container -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
