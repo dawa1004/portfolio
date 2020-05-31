@@ -19,8 +19,6 @@ contents
 
 # Note
 
-注意点などがあれば書く
-
 # Author
 
 * Ryo Wada
