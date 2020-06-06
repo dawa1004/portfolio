@@ -1475,6 +1475,31 @@ button div {
     margin: auto;
   }
 
+  
+  /* PORTFOLIO */
+  h2.section-title {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 481px) {
+  .dg-container{
+    width: 100%;
+    min-height: 510px;
+  }
+  .dg-wrapper{
+    width: 374px;
+    height: 216px;
+  }
+  .dg-wrapper a{
+    width: 375px;
+    height: 240px;
+    background: transparent url(../images/browser.png) no-repeat top left;
+  }
+  .dg-wrapper a img{
+    padding: 41px 0px 0px 1px;
+    width: 375px;
+  }
+  /* CONTACT */
   .share a:nth-child(1) {
     background-color: #61c5ec;
   }
@@ -1504,28 +1529,5 @@ button div {
   .share:hover a,
   .share.hover a {
   color: #fff;
-  }
-  /* PORTFOLIO */
-  h2.section-title {
-    font-size: 22px;
-  }
-}
-@media screen and (max-width: 481px) {
-  .dg-container{
-    width: 100%;
-    min-height: 510px;
-  }
-  .dg-wrapper{
-    width: 374px;
-    height: 216px;
-  }
-  .dg-wrapper a{
-    width: 375px;
-    height: 240px;
-    background: transparent url(../images/browser.png) no-repeat top left;
-  }
-  .dg-wrapper a img{
-    padding: 41px 0px 0px 1px;
-    width: 375px;
   }
 }
