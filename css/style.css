@@ -1482,6 +1482,10 @@ button div {
   }
 }
 @media screen and (max-width: 481px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .dg-container{
     width: 100%;
     min-height: 510px;
