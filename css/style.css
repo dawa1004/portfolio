@@ -1473,18 +1473,12 @@ button div {
     right: 0;
     margin: auto;
   }
-
-  
   /* PORTFOLIO */
   h2.section-title {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 481px) {
-  body {
-    overflow-x: hidden;
-  }
-
   .dg-container{
     width: 100%;
     min-height: 510px;
@@ -1496,7 +1490,6 @@ button div {
   .dg-wrapper a{
     width: 375px;
     height: 240px;
-    background: transparent url(../images/browser.png) no-repeat top left;
   }
   .dg-wrapper a img{
     padding: 41px 0px 0px 1px;
