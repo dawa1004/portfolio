@@ -1477,4 +1477,53 @@ button div {
   h2.section-title {
     font-size: 22px;
   }
+  @media screen and (max-width: 481px) {
+    .dg-container{
+      width: 100%;
+      min-height: 510px;
+    }
+    .dg-wrapper{
+      width: 374px;
+      height: 216px;
+    }
+    .dg-wrapper a{
+      width: 375px;
+      height: 240px;
+    }
+    .dg-wrapper a img{
+      padding: 41px 0px 0px 1px;
+      width: 375px;
+    }
+    /* CONTACT */
+    .share a:nth-child(1) {
+      background-color: #61c5ec;
+    }
+  
+    .share a:nth-child(2) {
+      background-color: #3b5998;
+    }
+  
+    .share a:nth-child(3) {
+      background-color: #ea4335;
+    }
+  
+    .share a:nth-child(4) {
+      background-color: #000000;
+    }
+  
+    .share span {
+      opacity: 0;
+    }
+  
+    .share a {
+      border-radius: 50%;
+      margin: 0 10px;
+      font-size: 28px;
+    }
+  
+    .share:hover a,
+    .share.hover a {
+    color: #fff;
+    }
+  }
 }
