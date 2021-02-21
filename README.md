@@ -22,7 +22,6 @@ contents
 # Author
 
 * Ryo Wada
-* wr1004wr1004wr@gmail.com
 
 # License
 
